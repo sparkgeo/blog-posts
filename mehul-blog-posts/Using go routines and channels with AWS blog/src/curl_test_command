@@ -1,0 +1,8 @@
+Run the following in a terminal.
+
+for i in {1..20};
+do curl localhost:7001/work
+-d userName=$USER
+-d requestNumber=$i
+-d requestTimeStamp=$(date "+%S:%M:%k//%d-%m-%y");
+done
